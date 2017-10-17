@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Tue Oct 10 16:31:31 2017
+# Process ID: 5696
+# Current directory: D:/DEL/EE2020/EE2020 Lab And Project Files/Project Files/ProjectTemplate@MyWorkDirectory/audio_effects/audio_effects.runs/impl_1
+# Command line: vivado.exe -log AUDIO_FX_TOP.vdi -applog -messageDb vivado.pb -mode batch -source AUDIO_FX_TOP.tcl -notrace
+# Log file: D:/DEL/EE2020/EE2020 Lab And Project Files/Project Files/ProjectTemplate@MyWorkDirectory/audio_effects/audio_effects.runs/impl_1/AUDIO_FX_TOP.vdi
+# Journal file: D:/DEL/EE2020/EE2020 Lab And Project Files/Project Files/ProjectTemplate@MyWorkDirectory/audio_effects/audio_effects.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source AUDIO_FX_TOP.tcl -notrace
