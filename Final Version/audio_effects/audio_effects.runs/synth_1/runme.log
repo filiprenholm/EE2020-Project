@@ -1,0 +1,293 @@
+
+*** Running vivado
+    with args -log AUDIO_FX_TOP.vds -m64 -mode batch -messageDb vivado.pb -notrace -source AUDIO_FX_TOP.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source AUDIO_FX_TOP.tcl -notrace
+Command: synth_design -top AUDIO_FX_TOP -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 1612 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 273.297 ; gain = 65.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'AUDIO_FX_TOP' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+INFO: [Synth 8-638] synthesizing module 'create_clk_20k' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_clk_20k.v:23]
+INFO: [Synth 8-256] done synthesizing module 'create_clk_20k' (1#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_clk_20k.v:23]
+INFO: [Synth 8-638] synthesizing module 'create_clk_50M' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_clk_50M.v:23]
+INFO: [Synth 8-256] done synthesizing module 'create_clk_50M' (2#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_clk_50M.v:23]
+INFO: [Synth 8-638] synthesizing module 'SPI' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-256] done synthesizing module 'SPI' (3#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/SPI.v:20]
+INFO: [Synth 8-638] synthesizing module 'create_tone' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_tone.v:23]
+INFO: [Synth 8-256] done synthesizing module 'create_tone' (4#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_tone.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'Tone_Freq' does not match port width (1) of module 'create_tone' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:66]
+INFO: [Synth 8-638] synthesizing module 'volume_to_led' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/volume_to_led.v:22]
+WARNING: [Synth 8-567] referenced signal 'FUNCTION_SELECTOR' should be on the sensitivity list [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/volume_to_led.v:37]
+WARNING: [Synth 8-567] referenced signal 'MIC_in' should be on the sensitivity list [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/volume_to_led.v:37]
+WARNING: [Synth 8-567] referenced signal 'switch' should be on the sensitivity list [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/volume_to_led.v:37]
+INFO: [Synth 8-256] done synthesizing module 'volume_to_led' (5#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/volume_to_led.v:22]
+INFO: [Synth 8-638] synthesizing module 'play_or_pause' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/play_or_pause.v:23]
+INFO: [Synth 8-256] done synthesizing module 'play_or_pause' (6#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/play_or_pause.v:23]
+INFO: [Synth 8-638] synthesizing module 'dist_mem_gen_0' [D:/MyWork/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-5988-EED0679/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'dist_mem_gen_0' (7#1) [D:/MyWork/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-5988-EED0679/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'delay_module' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/delay_module.v:23]
+INFO: [Synth 8-256] done synthesizing module 'delay_module' (8#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/delay_module.v:23]
+INFO: [Synth 8-638] synthesizing module 'song_module' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/song_module.v:23]
+INFO: [Synth 8-256] done synthesizing module 'song_module' (9#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/song_module.v:23]
+WARNING: [Synth 8-689] width (12) of port connection 'Tone_Freq' does not match port width (1) of module 'create_tone' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:83]
+INFO: [Synth 8-638] synthesizing module 'DA2RefComp' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'DA2RefComp' (10#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/audio_effects.srcs/DA2CompRef.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'AUDIO_FX_TOP' (11#1) [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:14]
+WARNING: [Synth 8-3331] design volume_to_led has unconnected port CLOCK
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 455.578 ; gain = 247.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[11] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[10] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[9] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[8] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[7] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[6] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[5] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[4] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[3] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[2] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[1] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+WARNING: [Synth 8-3295] tying undriven pin u2:DATA2[0] to constant 0 [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:98]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 455.578 ; gain = 247.715
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'dist_mem_gen_0' instantiated as 'g1' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/AUDIO_FX_TOP.v:74]
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/MyWork/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-5988-EED0679/dcp/dist_mem_gen_0_in_context.xdc] for cell 'g1'
+Finished Parsing XDC File [D:/MyWork/audio_effects/audio_effects.runs/synth_1/.Xil/Vivado-5988-EED0679/dcp/dist_mem_gen_0_in_context.xdc] for cell 'g1'
+Parsing XDC File [D:/MyWork/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'output'. [D:/MyWork/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:180]
+WARNING: [Vivado 12-584] No ports matched 'output'. [D:/MyWork/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc:181]
+Finished Parsing XDC File [D:/MyWork/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/MyWork/audio_effects/audio_effects.srcs/constrs_1/imports/Learn/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AUDIO_FX_TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/AUDIO_FX_TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 785.934 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:42 ; elapsed = 00:01:05 . Memory (MB): peak = 785.934 ; gain = 578.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:42 ; elapsed = 00:01:05 . Memory (MB): peak = 785.934 ; gain = 578.070
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:01:05 . Memory (MB): peak = 785.934 ; gain = 578.070
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "newCLK0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_tone.v:56]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_tone.v:51]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_tone.v:46]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/new/create_tone.v:41]
+INFO: [Synth 8-5546] ROM "Tone_Freq0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Tone_Freq0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "OFFSET" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'DA2RefComp'
+INFO: [Synth 8-5544] ROM "DONE" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'led_out_reg' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/volume_to_led.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'led_temp_reg' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/volume_to_led.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'count_reg' [D:/MyWork/audio_effects/audio_effects.srcs/sources_1/imports/new/volume_to_led.v:44]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                shiftout |                               01 |                               01
+                syncdata |                               10 |                               10
+                  iSTATE |                               11 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'DA2RefComp'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:06:17 ; elapsed = 00:06:40 . Memory (MB): peak = 785.934 ; gain = 578.070
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |delay_module__GB0 |           1|     18012|
+|2     |delay_module__GB1 |           1|     18000|
+|3     |delay_module__GB2 |           1|     28765|
+|4     |delay_module__GB3 |           1|      7236|
+|5     |AUDIO_FX_TOP__GC0 |           1|      3124|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 6002  
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     17 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 17    
+	   5 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 5     
+	   4 Input     12 Bit        Muxes := 1     
+	  17 Input      6 Bit        Muxes := 1     
+	  15 Input      6 Bit        Muxes := 1     
+	  14 Input      6 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   5 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AUDIO_FX_TOP 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+Module delay_module 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 6000  
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module create_clk_20k 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module create_clk_50M 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module SPI 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module create_tone__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     17 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module volume_to_led 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 15    
+	   5 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 1     
+Module song_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
++---Muxes : 
+	  17 Input      6 Bit        Muxes := 1     
+	  15 Input      6 Bit        Muxes := 1     
+	  14 Input      6 Bit        Muxes := 1     
+Module create_tone 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     17 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module DA2RefComp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:06:19 ; elapsed = 00:06:43 . Memory (MB): peak = 785.934 ; gain = 578.070
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
